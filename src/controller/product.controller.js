@@ -28,7 +28,7 @@ export const updateProducto = async(req, res) => {
 
     const {id} = req.params;
     const{name, description, code, photo, price, stock} = req.body;
-    const newProduct = await products.updateMany({_id: id}, req.body);
+    const newProduct = await products.updateOne({_id: id}, req.body);
 
     console.log("producto actualizado");
     res.send(newProduct)

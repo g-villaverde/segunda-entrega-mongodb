@@ -1,5 +1,4 @@
-// logica del carrito
-
+import cart from '../models/carrito.mongo.js'
 
 // POST: '/' - Crea un carrito y devuelve su id.
 
